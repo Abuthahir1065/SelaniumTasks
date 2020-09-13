@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-09-12T13:55:09Z" name="Default suite" finished-at="2020-09-12T13:56:24Z" duration-ms="75109">
+    <groups>
+    </groups>
+    <test started-at="2020-09-12T13:55:09Z" name="Default test" finished-at="2020-09-12T13:56:24Z" duration-ms="75109">
+      <class name="selaniumsecondprogram.DemoBlaze">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:selaniumsecondprogram.DemoBlaze@2b6856dd]" started-at="2020-09-12T13:55:09Z" name="beforeMethod" finished-at="2020-09-12T13:55:15Z" duration-ms="6486" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="signup()[pri:1, instance:selaniumsecondprogram.DemoBlaze@2b6856dd]" started-at="2020-09-12T13:55:15Z" name="signup" finished-at="2020-09-12T13:55:20Z" duration-ms="4504" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signup -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:selaniumsecondprogram.DemoBlaze@2b6856dd]" started-at="2020-09-12T13:55:20Z" name="afterMethod" finished-at="2020-09-12T13:55:20Z" duration-ms="88" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:selaniumsecondprogram.DemoBlaze@2b6856dd]" started-at="2020-09-12T13:55:20Z" name="beforeMethod" finished-at="2020-09-12T13:55:28Z" duration-ms="7900" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="login()[pri:2, instance:selaniumsecondprogram.DemoBlaze@2b6856dd]" started-at="2020-09-12T13:55:28Z" name="login" finished-at="2020-09-12T13:55:30Z" duration-ms="2477" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:selaniumsecondprogram.DemoBlaze@2b6856dd]" started-at="2020-09-12T13:55:30Z" name="afterMethod" finished-at="2020-09-12T13:55:30Z" duration-ms="69" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:selaniumsecondprogram.DemoBlaze@2b6856dd]" started-at="2020-09-12T13:55:30Z" name="beforeMethod" finished-at="2020-09-12T13:55:36Z" duration-ms="6020" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="contact()[pri:3, instance:selaniumsecondprogram.DemoBlaze@2b6856dd]" started-at="2020-09-12T13:55:36Z" name="contact" finished-at="2020-09-12T13:55:41Z" duration-ms="4545" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contact -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:selaniumsecondprogram.DemoBlaze@2b6856dd]" started-at="2020-09-12T13:55:41Z" name="afterMethod" finished-at="2020-09-12T13:55:41Z" duration-ms="91" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:selaniumsecondprogram.DemoBlaze@2b6856dd]" started-at="2020-09-12T13:55:41Z" name="beforeMethod" finished-at="2020-09-12T13:55:46Z" duration-ms="5014" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="addCart()[pri:4, instance:selaniumsecondprogram.DemoBlaze@2b6856dd]" started-at="2020-09-12T13:55:46Z" name="addCart" finished-at="2020-09-12T13:55:54Z" duration-ms="7874" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCart -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:selaniumsecondprogram.DemoBlaze@2b6856dd]" started-at="2020-09-12T13:55:54Z" name="afterMethod" finished-at="2020-09-12T13:55:54Z" duration-ms="95" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:selaniumsecondprogram.DemoBlaze@2b6856dd]" started-at="2020-09-12T13:55:54Z" name="beforeMethod" finished-at="2020-09-12T13:56:00Z" duration-ms="6048" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="validate()[pri:5, instance:selaniumsecondprogram.DemoBlaze@2b6856dd]" started-at="2020-09-12T13:56:00Z" name="validate" finished-at="2020-09-12T13:56:24Z" duration-ms="23765" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:selaniumsecondprogram.DemoBlaze@2b6856dd]" started-at="2020-09-12T13:56:24Z" name="afterMethod" finished-at="2020-09-12T13:56:24Z" duration-ms="104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- selaniumsecondprogram.DemoBlaze -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
