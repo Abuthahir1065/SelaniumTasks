@@ -22,12 +22,12 @@ public class DemoBlaze {
 		driver = new ChromeDriver();
 		driver.navigate().to("https://www.demoblaze.com");
 		driver.manage().window().maximize();
-
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
 
 	@Test(priority = 1)
 	public void signup() throws InterruptedException {
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+
 		driver.findElement(By.id("signin2")).click();
 		driver.findElement(By.cssSelector("input[id=sign-username]")).sendKeys("AbuthahirM");
 		driver.findElement(By.xpath("//*[@id='sign-password']")).sendKeys("AbuthahirM@123");
@@ -40,7 +40,6 @@ public class DemoBlaze {
 
 	@Test(priority = 2)
 	public void login() throws InterruptedException {
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//*[@id=\"login2\"]")).click();
 		driver.findElement(By.cssSelector("input[id=loginusername]")).sendKeys("AbuthahirM");
 		driver.findElement(By.xpath("//*[@id=\"loginpassword\"]")).sendKeys("AbuthahirM@123");
@@ -51,7 +50,6 @@ public class DemoBlaze {
 
 	@Test(priority = 3)
 	public void contact() throws InterruptedException {
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 		driver.findElement(By.xpath("//*[@id=\"navbarExample\"]/ul/li[2]/a")).click();
 		driver.findElement(By.cssSelector("input[id=recipient-email]")).sendKeys("abu@gmail.com");
@@ -66,7 +64,6 @@ public class DemoBlaze {
 
 	@Test(priority = 4)
 	public void addCart() throws InterruptedException {
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.findElement(By.className("nav-link")).click();
 		driver.findElement(By.xpath("//*[@id=\"tbodyid\"]/div[2]/div/a")).click();
 		driver.findElement(By.xpath("//*[@id='tbodyid']/div[2]/div/a")).click();
@@ -79,7 +76,6 @@ public class DemoBlaze {
 
 	@Test(priority = 5)
 	public void validate() throws InterruptedException {
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//*[@id=\"cartur\"]")).click();
 		Thread.sleep(15000);
 		driver.findElement(By.xpath("//*[@id=\"page-wrapper\"]/div/div[2]/button")).click();

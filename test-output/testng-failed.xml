@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="selaniumsecondprogram.DemoBlaze">
+      <class name="selaniumsecondprogram.DemoBlaze2">
         <methods>
-          <include name="beforeMethod"/>
-          <include name="validate"/>
+          <include name="signup"/>
           <include name="afterMethod"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- selaniumsecondprogram.DemoBlaze -->
+      </class> <!-- selaniumsecondprogram.DemoBlaze2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
