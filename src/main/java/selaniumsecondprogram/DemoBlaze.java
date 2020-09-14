@@ -5,7 +5,8 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 
 import org.testng.annotations.BeforeMethod;
@@ -32,9 +33,10 @@ public class DemoBlaze {
 		driver.findElement(By.cssSelector("input[id=sign-username]")).sendKeys("AbuthahirM");
 		driver.findElement(By.xpath("//*[@id='sign-password']")).sendKeys("AbuthahirM@123");
 		driver.findElement(By.xpath("//*[@id=\"signInModal\"]/div/div/div[3]/button[2]")).click();
-		Thread.sleep(2000);
+
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions.alertIsPresent());
 		driver.switchTo().alert().accept();
-		Thread.sleep(2000);
 
 	}
 
@@ -44,7 +46,6 @@ public class DemoBlaze {
 		driver.findElement(By.cssSelector("input[id=loginusername]")).sendKeys("AbuthahirM");
 		driver.findElement(By.xpath("//*[@id=\"loginpassword\"]")).sendKeys("AbuthahirM@123");
 		driver.findElement(By.xpath("//*[@id=\"logInModal\"]/div/div/div[3]/button[2]")).click();
-		Thread.sleep(2000);
 
 	}
 
@@ -56,9 +57,9 @@ public class DemoBlaze {
 		driver.findElement(By.cssSelector("input[id=recipient-name]")).sendKeys("Abuthahir");
 		driver.findElement(By.id("message-text")).sendKeys("Query raising");
 		driver.findElement(By.xpath("//*[@id=\"exampleModal\"]/div/div/div[3]/button[2]")).click();
-		Thread.sleep(2000);
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions.alertIsPresent());
 		driver.switchTo().alert().accept();
-		Thread.sleep(2000);
 
 	}
 
@@ -67,15 +68,9 @@ public class DemoBlaze {
 		driver.findElement(By.className("nav-link")).click();
 		driver.findElement(By.xpath("//*[@id=\"tbodyid\"]/div[2]/div/a")).click();
 		driver.findElement(By.xpath("//*[@id='tbodyid']/div[2]/div/a")).click();
-
-		Thread.sleep(2000);
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions.alertIsPresent());
 		driver.switchTo().alert().accept();
-		Thread.sleep(2000);
-
-	}
-
-	@Test(priority = 5)
-	public void validate() throws InterruptedException {
 		driver.findElement(By.xpath("//*[@id=\"cartur\"]")).click();
 		Thread.sleep(15000);
 		driver.findElement(By.xpath("//*[@id=\"page-wrapper\"]/div/div[2]/button")).click();
@@ -86,10 +81,9 @@ public class DemoBlaze {
 		driver.findElement(By.id("month")).sendKeys("October");
 		driver.findElement(By.id("year")).sendKeys("2020");
 		driver.findElement(By.xpath("//*[@id=\"orderModal\"]/div/div/div[3]/button[2]")).click();
-		Thread.sleep(2000);
 
 		driver.findElement(By.xpath("/html/body/div[10]/div[7]/div/button")).click();
-		Thread.sleep(2000);
+
 	}
 
 	@AfterMethod

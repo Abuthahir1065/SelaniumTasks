@@ -5,9 +5,10 @@
     <classes>
       <class name="selaniumsecondprogram.DemoBlaze2">
         <methods>
-          <include name="signup"/>
+          <include name="validate"/>
           <include name="afterMethod"/>
           <include name="beforeMethod"/>
+          <include name="addCart"/>
         </methods>
       </class> <!-- selaniumsecondprogram.DemoBlaze2 -->
     </classes>
