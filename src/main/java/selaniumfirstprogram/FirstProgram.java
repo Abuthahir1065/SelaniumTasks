@@ -39,7 +39,8 @@ public class FirstProgram {
 	@BeforeMethod
 	public void beforeMethod() {
 		System.out.println("gurutest method is executing....");
-		chromePath = "C:\\Webdrivers\\chromedriver.exe";
+		chromePath= System.getProperty("user.dir")+"\\chromedriver.exe";
+		
 		url = "http://demo.guru99.com/test/login.html";
 
 	}
@@ -50,7 +51,7 @@ public class FirstProgram {
 		driver = new ChromeDriver();
 		driver.get(url);
 		driver.findElement(By.name("email")).sendKeys("abu@gmail.com");
-		//driver.findElement(By.name("passwd")).sendKeys("abu");
+	
 		driver.findElement(By.cssSelector("input[id=passwd]"));
 		driver.findElement(By.name("SubmitLogin")).click();
 

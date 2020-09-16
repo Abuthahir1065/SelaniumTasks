@@ -1,5 +1,7 @@
 package selaniumfirstprogram;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -16,7 +18,8 @@ public class SecondProgram {
 	@BeforeMethod
 	public void beforeMethod() {
 		System.out.println("google method is executing...");
-		chromePath = "C:\\Webdrivers\\chromedriver.exe";
+		chromePath= System.getProperty("user.dir")+"\\chromedriver.exe";
+
 		url = "http://www.google.com";
 	}
 
@@ -26,8 +29,11 @@ public class SecondProgram {
 		driver = new ChromeDriver();
 		driver.get(url);
 		driver.findElement(By.name("q")).sendKeys("java");
-		driver.findElement(By.xpath("//*[@id=\"tsf\"]/div[2]/div[1]/div[3]/center/input[1]")).click();
-		Thread.sleep(2000);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.findElement(By.xpath("//input[@class='gNO89b']")).click();
+	
+
+
 	}
 
 	@AfterMethod

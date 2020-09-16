@@ -1,61 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-09-14T06:29:46Z" name="Default suite" finished-at="2020-09-14T06:30:36Z" duration-ms="50233">
+  <suite started-at="2020-09-16T11:59:55Z" name="Default suite" finished-at="2020-09-16T12:00:11Z" duration-ms="16623">
     <groups>
     </groups>
-    <test started-at="2020-09-14T06:29:46Z" name="Default test" finished-at="2020-09-14T06:30:36Z" duration-ms="50233">
-      <class name="selaniumsecondprogram.DemoBlaze">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:selaniumsecondprogram.DemoBlaze@37e547da]" started-at="2020-09-14T06:29:46Z" name="beforeMethod" finished-at="2020-09-14T06:29:53Z" duration-ms="6906" status="PASS">
+    <test started-at="2020-09-16T11:59:55Z" name="Default test" finished-at="2020-09-16T12:00:11Z" duration-ms="16623">
+      <class name="selaniumthirdprogram.Automation_Site">
+        <test-method is-config="true" signature="properties()[pri:0, instance:selaniumthirdprogram.Automation_Site@b62fe6d]" started-at="2020-09-16T11:59:55Z" name="properties" finished-at="2020-09-16T12:00:04Z" duration-ms="9177" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="signup()[pri:1, instance:selaniumsecondprogram.DemoBlaze@37e547da]" started-at="2020-09-14T06:29:53Z" name="signup" finished-at="2020-09-14T06:29:54Z" duration-ms="1438" status="PASS">
+        </test-method> <!-- properties -->
+        <test-method signature="fillform()[pri:0, instance:selaniumthirdprogram.Automation_Site@b62fe6d]" started-at="2020-09-16T12:00:04Z" name="fillform" finished-at="2020-09-16T12:00:09Z" duration-ms="5103" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- signup -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:selaniumsecondprogram.DemoBlaze@37e547da]" started-at="2020-09-14T06:29:54Z" name="afterMethod" finished-at="2020-09-14T06:29:54Z" duration-ms="82" status="PASS">
+        </test-method> <!-- fillform -->
+        <test-method is-config="true" signature="close()[pri:0, instance:selaniumthirdprogram.Automation_Site@b62fe6d]" started-at="2020-09-16T12:00:09Z" name="close" finished-at="2020-09-16T12:00:11Z" duration-ms="2321" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:selaniumsecondprogram.DemoBlaze@37e547da]" started-at="2020-09-14T06:29:54Z" name="beforeMethod" finished-at="2020-09-14T06:30:01Z" duration-ms="6885" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="login()[pri:2, instance:selaniumsecondprogram.DemoBlaze@37e547da]" started-at="2020-09-14T06:30:01Z" name="login" finished-at="2020-09-14T06:30:02Z" duration-ms="390" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:selaniumsecondprogram.DemoBlaze@37e547da]" started-at="2020-09-14T06:30:02Z" name="afterMethod" finished-at="2020-09-14T06:30:02Z" duration-ms="72" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:selaniumsecondprogram.DemoBlaze@37e547da]" started-at="2020-09-14T06:30:02Z" name="beforeMethod" finished-at="2020-09-14T06:30:07Z" duration-ms="5210" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="contact()[pri:3, instance:selaniumsecondprogram.DemoBlaze@37e547da]" started-at="2020-09-14T06:30:07Z" name="contact" finished-at="2020-09-14T06:30:07Z" duration-ms="478" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- contact -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:selaniumsecondprogram.DemoBlaze@37e547da]" started-at="2020-09-14T06:30:07Z" name="afterMethod" finished-at="2020-09-14T06:30:07Z" duration-ms="66" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:selaniumsecondprogram.DemoBlaze@37e547da]" started-at="2020-09-14T06:30:07Z" name="beforeMethod" finished-at="2020-09-14T06:30:13Z" duration-ms="5490" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="addCart()[pri:4, instance:selaniumsecondprogram.DemoBlaze@37e547da]" started-at="2020-09-14T06:30:13Z" name="addCart" finished-at="2020-09-14T06:30:36Z" duration-ms="23130" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addCart -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:selaniumsecondprogram.DemoBlaze@37e547da]" started-at="2020-09-14T06:30:36Z" name="afterMethod" finished-at="2020-09-14T06:30:36Z" duration-ms="63" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- selaniumsecondprogram.DemoBlaze -->
+        </test-method> <!-- close -->
+      </class> <!-- selaniumthirdprogram.Automation_Site -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
