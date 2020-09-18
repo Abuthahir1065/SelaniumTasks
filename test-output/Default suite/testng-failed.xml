@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="selaniumfourthassignment.Phptravels2">
+      <class name="selenium.phptravels.Phptravels">
         <methods>
-          <include name="login"/>
           <include name="close"/>
+          <include name="login"/>
           <include name="site"/>
         </methods>
-      </class> <!-- selaniumfourthassignment.Phptravels2 -->
+      </class> <!-- selenium.phptravels.Phptravels -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

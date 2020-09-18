@@ -31,11 +31,11 @@ public class GoIbibo {
 	public void site() throws IOException {
 		String chromeDriverPath = System.getProperty("user.dir") + "\\chromedriver.exe";
 		FileInputStream file = new FileInputStream(
-				System.getProperty("user.dir") + "\\src\\test\\java\\SelaniumProject\\Project\\locators.properties");
+				System.getProperty("user.dir") + "\\src\\test\\java\\SeleniumProject\\Project\\locators.properties");
 		prop = new Properties();
 		prop.load(file);
 		FileInputStream dataFile = new FileInputStream(
-				System.getProperty("user.dir") + "\\src\\test\\java\\SelaniumProject\\Project\\data.properties");
+				System.getProperty("user.dir") + "\\src\\test\\java\\SeleniumProject\\Project\\data.properties");
 
 		data = new Properties();
 		data.load(dataFile);

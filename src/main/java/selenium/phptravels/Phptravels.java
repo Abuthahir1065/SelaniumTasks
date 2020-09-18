@@ -32,11 +32,11 @@ public class Phptravels {
 		String chromeDriverPath = System.getProperty("user.dir") + "\\chromedriver.exe";
 
 		FileInputStream locator = new FileInputStream(System.getProperty("user.dir")
-				+ "//src//test//java//SelaniumProject//Project//phpTravelsLocators.properties");
+				+ "//src//test//java//SeleniumProject//Project//phpTravelsLocators.properties");
 		Locators = new Properties();
 		Locators.load(locator);
 		FileInputStream data = new FileInputStream(System.getProperty("user.dir")
-				+ "//src//test//java//SelaniumProject//Project//phpTravelsData.properties");
+				+ "//src//test//java//SeleniumProject//Project//phpTravelsData.properties");
 		Data = new Properties();
 		Data.load(data);
 		driver = new ChromeDriver();

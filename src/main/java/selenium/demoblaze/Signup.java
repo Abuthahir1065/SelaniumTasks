@@ -28,11 +28,11 @@ public class Signup {
 	public void beforeMethod() throws IOException {
 
 		FileInputStream locator = new FileInputStream(System.getProperty("user.dir")
-				+ "//src//test//java//SelaniumProject//Project//blazeLocators.properties");
+				+ "//src//test//java//SeleniumProject//Project//blazeLocators.properties");
 		Locators = new Properties();
 		Locators.load(locator);
 		FileInputStream data = new FileInputStream(
-				System.getProperty("user.dir") + "//src//test//java//SelaniumProject//Project//blazeData.properties");
+				System.getProperty("user.dir") + "//src//test//java//SeleniumProject//Project//blazeData.properties");
 		Data = new Properties();
 		Data.load(data);
 

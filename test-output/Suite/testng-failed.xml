@@ -3,16 +3,24 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="selaniumsecondprogram.DemoBlaze">
+      <class name="selenium.automationSite.Automation_Site">
         <methods>
-          <include name="beforeMethod"/>
-          <include name="login"/>
-          <include name="contact"/>
-          <include name="afterMethod"/>
-          <include name="addCart"/>
-          <include name="signup"/>
+          <include name="properties"/>
+          <include name="fillform"/>
+          <include name="close"/>
         </methods>
-      </class> <!-- selaniumsecondprogram.DemoBlaze -->
+      </class> <!-- selenium.automationSite.Automation_Site -->
+      <class name="selenium.automationSite.Windows">
+        <methods>
+          <include name="linkedIn"/>
+          <include name="close"/>
+          <include name="googlePlus"/>
+          <include name="properties"/>
+          <include name="youtube"/>
+          <include name="twitter"/>
+          <include name="facebook"/>
+        </methods>
+      </class> <!-- selenium.automationSite.Windows -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
