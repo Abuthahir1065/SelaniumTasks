@@ -3,13 +3,21 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="selenium.phptravels.Phptravels">
+      <class name="selenium.demoblaze.copy.ContactClass">
         <methods>
-          <include name="close"/>
-          <include name="login"/>
-          <include name="site"/>
+          <include name="contact"/>
         </methods>
-      </class> <!-- selenium.phptravels.Phptravels -->
+      </class> <!-- selenium.demoblaze.copy.ContactClass -->
+      <class name="selenium.demoblaze.copy.LoginClass">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- selenium.demoblaze.copy.LoginClass -->
+      <class name="selenium.demoblaze.copy.AddCartClass">
+        <methods>
+          <include name="addCart"/>
+        </methods>
+      </class> <!-- selenium.demoblaze.copy.AddCartClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
