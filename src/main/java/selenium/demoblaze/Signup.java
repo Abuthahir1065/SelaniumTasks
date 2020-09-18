@@ -20,23 +20,24 @@ public class Signup {
 
 	String chromePath;
 	WebDriver driver;
-	
-    Properties Locators;
-    Properties Data;
-	@BeforeMethod
-    public void beforeMethod() throws IOException {
-		
-		
-		FileInputStream locator=new FileInputStream(System.getProperty("user.dir")+"//src//test//java//SelaniumProject//Project//blazeLocators.properties");
-		Locators=new Properties();
-		Locators.load(locator);
-		FileInputStream data=new FileInputStream(System.getProperty("user.dir")+"//src//test//java//SelaniumProject//Project//blazeData.properties");
-		Data=new Properties();
-		Data.load(data);
-		
-		chromePath= System.getProperty("user.dir")+"\\chromedriver.exe";
 
-		
+	Properties Locators;
+	Properties Data;
+
+	@BeforeMethod
+	public void beforeMethod() throws IOException {
+
+		FileInputStream locator = new FileInputStream(System.getProperty("user.dir")
+				+ "//src//test//java//SelaniumProject//Project//blazeLocators.properties");
+		Locators = new Properties();
+		Locators.load(locator);
+		FileInputStream data = new FileInputStream(
+				System.getProperty("user.dir") + "//src//test//java//SelaniumProject//Project//blazeData.properties");
+		Data = new Properties();
+		Data.load(data);
+
+		chromePath = System.getProperty("user.dir") + "\\chromedriver.exe";
+
 		driver = new ChromeDriver();
 		driver.navigate().to("https://www.demoblaze.com");
 		driver.manage().window().maximize();
@@ -47,18 +48,18 @@ public class Signup {
 	public void signup() throws InterruptedException {
 
 		driver.findElement(By.id(Locators.getProperty("SignIn_Id"))).click();
-		driver.findElement(By.cssSelector(Locators.getProperty("Signup_Username"))).sendKeys(Data.getProperty("UsernameSignup"));
-		driver.findElement(By.xpath(Locators.getProperty("Signup_Password"))).sendKeys(Data.getProperty("PasswordSignup"));
-		
+		driver.findElement(By.cssSelector(Locators.getProperty("Signup_Username")))
+				.sendKeys(Data.getProperty("UsernameSignup"));
+		driver.findElement(By.xpath(Locators.getProperty("Signup_Password")))
+				.sendKeys(Data.getProperty("PasswordSignup"));
+
 		driver.findElement(By.xpath(Locators.getProperty("ButtonXpath"))).click();
-     
-        
+
 		WebDriverWait wait = new WebDriverWait(driver, 30);
-	    wait.until(ExpectedConditions.alertIsPresent());
+		wait.until(ExpectedConditions.alertIsPresent());
 		driver.switchTo().alert().accept();
 		driver.close();
 
 	}
-	
 
 }

@@ -10,38 +10,37 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
- 
+
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-
-public class AddCartClass{
-	 Properties Locators;
-     Properties Data;
-	 String chromePath;
+public class AddCartClass {
+	Properties Locators;
+	Properties Data;
+	String chromePath;
 	WebDriver driver;
-	@BeforeMethod
-    public void beforeMethod() throws IOException {
-		
-		
-		FileInputStream locator=new FileInputStream(System.getProperty("user.dir")+"//src//test//java//SelaniumProject//Project//blazeLocators.properties");
-		Locators=new Properties();
-		Locators.load(locator);
-		FileInputStream data=new FileInputStream(System.getProperty("user.dir")+"//src//test//java//SelaniumProject//Project//blazeData.properties");
-		Data=new Properties();
-		Data.load(data);
-		
-		chromePath= System.getProperty("user.dir")+"\\chromedriver.exe";
 
-		
+	@BeforeMethod
+	public void beforeMethod() throws IOException {
+
+		FileInputStream locator = new FileInputStream(System.getProperty("user.dir")
+				+ "//src//test//java//SelaniumProject//Project//blazeLocators.properties");
+		Locators = new Properties();
+		Locators.load(locator);
+		FileInputStream data = new FileInputStream(
+				System.getProperty("user.dir") + "//src//test//java//SelaniumProject//Project//blazeData.properties");
+		Data = new Properties();
+		Data.load(data);
+
+		chromePath = System.getProperty("user.dir") + "\\chromedriver.exe";
+
 		driver = new ChromeDriver();
 		driver.navigate().to("https://www.demoblaze.com");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
 
-	
-	@Test(priority=4)
+	@Test(priority = 4)
 	public void addCart() throws InterruptedException {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.findElement(By.className(Locators.getProperty("Home"))).click();
@@ -52,8 +51,7 @@ public class AddCartClass{
 		driver.switchTo().alert().accept();
 		driver.findElement(By.xpath(Locators.getProperty("CartLink"))).click();
 		Thread.sleep(5000);
-		
-		
+
 		driver.findElement(By.xpath(Locators.getProperty("PlaceOrder"))).click();
 		driver.findElement(By.id(Locators.getProperty("Name_id"))).sendKeys(Data.getProperty("Name"));
 		driver.findElement(By.id(Locators.getProperty("Country_id"))).sendKeys(Data.getProperty("Country"));
@@ -67,8 +65,5 @@ public class AddCartClass{
 		driver.close();
 
 	}
-
-	
-
 
 }

@@ -39,19 +39,19 @@ public class FirstProgram {
 	@BeforeMethod
 	public void beforeMethod() {
 		System.out.println("gurutest method is executing....");
-		chromePath= System.getProperty("user.dir")+"\\chromedriver.exe";
-		
+		chromePath = System.getProperty("user.dir") + "\\chromedriver.exe";
+
 		url = "http://demo.guru99.com/test/login.html";
 
 	}
 
-	@Test
+	@Test(priority = 1)
 	public void guruTest() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver",chromePath);
+		System.setProperty("webdriver.chrome.driver", chromePath);
 		driver = new ChromeDriver();
 		driver.get(url);
 		driver.findElement(By.name("email")).sendKeys("abu@gmail.com");
-	
+
 		driver.findElement(By.cssSelector("input[id=passwd]"));
 		driver.findElement(By.name("SubmitLogin")).click();
 

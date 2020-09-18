@@ -24,18 +24,21 @@ import org.w3c.dom.Document;
 public class GoIbibo {
 
 	WebDriver driver;
-Properties prop;
-Properties data; 
+	Properties prop;
+	Properties data;
+
 	@BeforeMethod
 	public void site() throws IOException {
 		String chromeDriverPath = System.getProperty("user.dir") + "\\chromedriver.exe";
-		FileInputStream file = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\java\\SelaniumProject\\Project\\locators.properties");
+		FileInputStream file = new FileInputStream(
+				System.getProperty("user.dir") + "\\src\\test\\java\\SelaniumProject\\Project\\locators.properties");
 		prop = new Properties();
 		prop.load(file);
-		FileInputStream dataFile = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\java\\SelaniumProject\\Project\\data.properties");
+		FileInputStream dataFile = new FileInputStream(
+				System.getProperty("user.dir") + "\\src\\test\\java\\SelaniumProject\\Project\\data.properties");
 
-	    data=new Properties();
-	    data.load(dataFile);
+		data = new Properties();
+		data.load(dataFile);
 		driver = new ChromeDriver();
 		driver.navigate().to("https://www.goibibo.com/");
 		driver.manage().window().maximize();
@@ -109,7 +112,7 @@ Properties data;
 		Select dropdown = new Select(travel);
 		dropdown.selectByValue("F");
 		driver.findElement(By.xpath(prop.getProperty("SearchXpath"))).click();
-			}
+	}
 
 	@AfterMethod
 	public void close() {

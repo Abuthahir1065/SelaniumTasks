@@ -18,21 +18,19 @@ public class SecondProgram {
 	@BeforeMethod
 	public void beforeMethod() {
 		System.out.println("google method is executing...");
-		chromePath= System.getProperty("user.dir")+"\\chromedriver.exe";
+		chromePath = System.getProperty("user.dir") + "\\chromedriver.exe";
 
 		url = "http://www.google.com";
 	}
 
-	@Test
+	@Test(priority = 2)
 	public void google() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver",chromePath);
+		System.setProperty("webdriver.chrome.driver", chromePath);
 		driver = new ChromeDriver();
 		driver.get(url);
 		driver.findElement(By.name("q")).sendKeys("java");
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//input[@class='gNO89b']")).click();
-	
-
 
 	}
 

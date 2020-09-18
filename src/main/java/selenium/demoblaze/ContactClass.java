@@ -16,36 +16,38 @@ import org.testng.annotations.Test;
 
 public class ContactClass {
 	Properties Locators;
-     Properties Data;
-	 String chromePath;
+	Properties Data;
+	String chromePath;
 	WebDriver driver;
-	@BeforeMethod
-    public void beforeMethod() throws IOException {
-		
-		
-		FileInputStream locator=new FileInputStream(System.getProperty("user.dir")+"//src//test//java//SelaniumProject//Project//blazeLocators.properties");
-		Locators=new Properties();
-		Locators.load(locator);
-		FileInputStream data=new FileInputStream(System.getProperty("user.dir")+"//src//test//java//SelaniumProject//Project//blazeData.properties");
-		Data=new Properties();
-		Data.load(data);
-		
-		chromePath= System.getProperty("user.dir")+"\\chromedriver.exe";
 
-		
+	@BeforeMethod
+	public void beforeMethod() throws IOException {
+
+		FileInputStream locator = new FileInputStream(System.getProperty("user.dir")
+				+ "//src//test//java//SelaniumProject//Project//blazeLocators.properties");
+		Locators = new Properties();
+		Locators.load(locator);
+		FileInputStream data = new FileInputStream(
+				System.getProperty("user.dir") + "//src//test//java//SelaniumProject//Project//blazeData.properties");
+		Data = new Properties();
+		Data.load(data);
+
+		chromePath = System.getProperty("user.dir") + "\\chromedriver.exe";
+
 		driver = new ChromeDriver();
 		driver.navigate().to("https://www.demoblaze.com");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
 
-    
 	@Test(priority = 3)
 	public void contact() throws InterruptedException {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.findElement(By.xpath(Locators.getProperty("ContactLink"))).click();
-		driver.findElement(By.cssSelector(Locators.getProperty("Recipient_Email"))).sendKeys(Data.getProperty("Recipient_Mail"));
-		driver.findElement(By.cssSelector(Locators.getProperty("Recipient_name"))).sendKeys(Data.getProperty("Recipient_Name"));
+		driver.findElement(By.cssSelector(Locators.getProperty("Recipient_Email")))
+				.sendKeys(Data.getProperty("Recipient_Mail"));
+		driver.findElement(By.cssSelector(Locators.getProperty("Recipient_name")))
+				.sendKeys(Data.getProperty("Recipient_Name"));
 		driver.findElement(By.id(Locators.getProperty("Messageid"))).sendKeys(Data.getProperty("Message"));
 		driver.findElement(By.xpath(Locators.getProperty("SendMessage"))).click();
 		WebDriverWait wait = new WebDriverWait(driver, 30);
@@ -54,5 +56,5 @@ public class ContactClass {
 		driver.close();
 
 	}
-	
+
 }
