@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="selaniumthirdprogram.GoIbibo">
+      <class name="selaniumfourthassignment.Phptravels2">
         <methods>
+          <include name="login"/>
           <include name="close"/>
-          <include name="book"/>
+          <include name="site"/>
         </methods>
-      </class> <!-- selaniumthirdprogram.GoIbibo -->
+      </class> <!-- selaniumfourthassignment.Phptravels2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -3,7 +3,17 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="selaniumsecondprogram.DemoBlaze"/>
+      <class name="selenium.demoblaze.AddCartClass"/>
+      <class name="selenium.demoblaze.ContactClass"/>
+      <class name="selenium.automationSite.Automation_Site"/>
+      <class name="SeleniumProject.Project.AppTest"/>
+      <class name="selenium.phptravels.Phptravels"/>
+      <class name="selenium.automationSite.Windows"/>
+      <class name="selenium.goibibo.GoIbibo"/>
+      <class name="selenium.demoblaze.LoginClass"/>
+      <class name="selenium.demoblaze.Signup"/>
+      <class name="selenium.annotations.SecondProgram"/>
+      <class name="selenium.annotations.FirstProgram"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -1,4 +1,4 @@
-package SelaniumProject.Project;
+package SeleniumProject.Project;
 
 import static org.junit.Assert.assertTrue;
 
