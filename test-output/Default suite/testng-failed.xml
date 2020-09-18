@@ -3,21 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="selenium.demoblaze.copy.ContactClass">
+      <class name="selenium.automationSite.copy.Windows">
         <methods>
-          <include name="contact"/>
+          <include name="youtube"/>
+          <include name="twitter"/>
+          <include name="linkedIn"/>
+          <include name="close"/>
+          <include name="properties"/>
         </methods>
-      </class> <!-- selenium.demoblaze.copy.ContactClass -->
-      <class name="selenium.demoblaze.copy.LoginClass">
-        <methods>
-          <include name="login"/>
-        </methods>
-      </class> <!-- selenium.demoblaze.copy.LoginClass -->
-      <class name="selenium.demoblaze.copy.AddCartClass">
-        <methods>
-          <include name="addCart"/>
-        </methods>
-      </class> <!-- selenium.demoblaze.copy.AddCartClass -->
+      </class> <!-- selenium.automationSite.copy.Windows -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

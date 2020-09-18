@@ -1,23 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="selenium.demoblaze.copy.LoginClass">
+      <class name="selenium.automationSite.copy.Windows">
         <methods>
-          <include name="login"/>
+          <include name="youtube"/>
+          <include name="twitter"/>
+          <include name="linkedIn"/>
+          <include name="close"/>
+          <include name="properties"/>
         </methods>
-      </class> <!-- selenium.demoblaze.copy.LoginClass -->
-      <class name="selenium.demoblaze.copy.AddCartClass">
-        <methods>
-          <include name="addCart"/>
-        </methods>
-      </class> <!-- selenium.demoblaze.copy.AddCartClass -->
-      <class name="selenium.demoblaze.copy.ContactClass">
-        <methods>
-          <include name="contact"/>
-        </methods>
-      </class> <!-- selenium.demoblaze.copy.ContactClass -->
+      </class> <!-- selenium.automationSite.copy.Windows -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
